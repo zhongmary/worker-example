@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .e-r-img {
+            position: relative;
+            display: inline-block;
+        }
+
+        span.wyj {
+            display: inline-block;
+            width: 43px;
+            height: 43px;
+            background: url("wyj.png") no-repeat;
+            animation: inherit;
+           animation-direction: reverse;
+
+        }
+        span.outer{
+            display: inline-block;
+            animation: spin 1s infinite linear;
+            width: 43px;
+            height: 43px;
+            position: absolute;
+            bottom: 25%;
+            right: 8%;
+            transform-origin: 20% 10%;
+        }
+
+       @keyframes spin{
+           from{transform: rotate(1turn)}
+       }
+
+    </style>
+</head>
+<body>
+<div class="e-r-img"><img src="bg.png"><span class="outer"><span class="wyj"></span></span></div>
+</body>
+</html>
